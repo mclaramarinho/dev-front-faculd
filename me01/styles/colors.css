@@ -1,0 +1,9 @@
+.texto_branco{
+    color: white;
+}
+.texto_amarelo{
+    color: var(--amarelo1);
+}
+.texto_cinza{
+    color: var(--cinza);
+}

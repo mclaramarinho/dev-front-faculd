@@ -1,0 +1,103 @@
+@import 'other.css';
+@import 'colors.css';
+
+:root{
+    --amarelo1: #febe01;
+    --amarelo2: #332200;
+    --preto: #111;
+    --cinza: #b2b2b2;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+::after, ::before{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container_main, .container_item{
+    display: block;
+}
+.container_centro{
+    display: inline-block;
+    position: fixed;
+    padding: 2vw;
+}
+.container_titulo, .container_item, .linha{
+    position: relative;
+}
+
+@media (max-width: 768px){
+    .container_centro{
+        width: 95%;
+        height: 95%;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        padding: 2vh;
+    }
+    .desc_item{
+        text-align: left;
+    }
+    .linha_do_botao{
+        justify-content: end;
+    }
+    .btn_amarelo{
+        font-size: 1rem;
+    }
+    .container_item{
+        padding: 3vh;
+    }
+}
+
+@media (min-width: 768px){
+    .container_centro{
+        width: 75%;
+        height: fit-content;
+        right: 0;
+        bottom: 0;
+    }
+    .btn_amarelo{
+        font-size: 1.2rem;
+    }
+    .container_item{
+        padding: 2.5vw 2vw;
+    }
+}
+
+
+.container_item{
+    background-color: var(--preto);
+    border-radius: 4px;
+}
+
+.linha{
+    display: inline-flex;
+    width: 100%;
+}
+
+h2, span{
+    margin: 0;
+}
+
+.btn_amarelo{
+    appearance: none;
+    cursor: pointer;
+    color: var(--amarelo2);
+    background-color: var(--amarelo1);
+    padding: 1.5vh;
+    border-radius: 4px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.btn_amarelo:hover{
+    background-color: white;
+    color: var(--preto);
+    padding: 1.8vh;
+}

@@ -1,0 +1,98 @@
+:root{
+    font-family: Arial;
+    --bg-color-cinza: #dddcdc;
+    --text-color-cinza: #c6c6c6;
+    --highlight-color-red: #ee2211;
+    --black: #343232;
+    --white: #f1eeee;
+}
+body{
+    background-color: var(--bg-color-cinza);
+    color: var(--black);
+    margin: 0;
+}
+p{
+    font-size: 20px;
+}
+.bg-white{
+    background-color: var(--white);
+}
+.p-5{
+    padding: 5%;
+}
+.page_title, footer{
+    text-align: center;
+}
+.menu, .main_content, .container__vantagem{
+    display: grid;
+}
+.menu{
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3% auto 0 auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: 5%;
+}
+.btn{
+    text-decoration: none;
+}
+.menu__button{
+    background-color: var(--white);
+    padding: 8% 10%;
+    color: var(--black);
+}
+.cta_btn{
+    background-color: var(--highlight-color-red);
+    color: var(--white);
+    font-weight: bold;
+    padding: 3% 8%;
+    width: fit-content;
+}
+.main_content{
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+    margin: 3% auto;
+}
+.content_1{
+    display: grid;
+    align-content: center;
+    justify-items: end;
+    > h2, p{
+        text-align: end;
+        width: 90%;
+        grid-row: auto;
+    }
+}
+img{
+    position: relative;
+    max-width: 100%;
+}
+.content_3{
+    font-size: 64px;
+    color: var(--text-color-cinza);
+    align-content: center;
+    text-align: end;
+    font-weight: bold;
+}
+.container__vantagem{
+    width: 75%;
+    margin: 0 auto 20px auto;
+    grid-template-columns: auto;
+    font-size: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.vantagem__titulo{
+    font-weight: bold;
+}
+.vantagem__icone{
+    color: var(--highlight-color-red);
+}
+.vantagem__descricao{
+    grid-column: 2 / 3;
+}
+footer{
+    padding: 1.5% 0%;
+    color: var(--black);
+}

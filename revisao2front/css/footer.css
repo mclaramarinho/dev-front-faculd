@@ -1,0 +1,36 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 3%;
+    column-gap: 5vw;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    margin-top: 5%;
+    
+    background-color: lightgray;
+}
+
+#right_side{
+    display: grid;
+    
+    p {
+        margin: 0;
+    }
+}
+
+#social_media{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    column-gap: 1vw;
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+
+.bi-instagram{
+    color: purple;
+}

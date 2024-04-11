@@ -1,0 +1,16 @@
+#start {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    column-gap: 5vw;
+    padding: 5% 0;
+}
+
+#start > img{
+    max-width: 100%;
+    border-radius: 2vw;
+}
+
+#start > div > p{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
